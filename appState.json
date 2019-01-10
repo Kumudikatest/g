@@ -1,0 +1,97 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "26702d15-e722-4ec2-b1fe-ca6940b53424": {
+        "id": "26702d15-e722-4ec2-b1fe-ca6940b53424",
+        "parent": null,
+        "name": "g",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "5d244dee-08e3-4b29-a8fd-07715f1c32f1"
+        ],
+        "isRemovable": false,
+        "filePath": "g"
+      },
+      "5d244dee-08e3-4b29-a8fd-07715f1c32f1": {
+        "id": "5d244dee-08e3-4b29-a8fd-07715f1c32f1",
+        "parent": "26702d15-e722-4ec2-b1fe-ca6940b53424",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "g/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1gany",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "timeout": 60,
+          "memory": 128
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "26702d15-e722-4ec2-b1fe-ca6940b53424",
+    "openFiles": [
+      "5d244dee-08e3-4b29-a8fd-07715f1c32f1"
+    ],
+    "currentFileId": "5d244dee-08e3-4b29-a8fd-07715f1c32f1",
+    "resources": {
+      "apigusEast1gany": {
+        "name": "apigusEast1gany",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "g",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "",
+          "resourcePath": "/",
+          "restMethod": "ANY",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "test"
+        },
+        "globallyEditable": false
+      }
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    },
+    "lambdaId": "5d244dee-08e3-4b29-a8fd-07715f1c32f1"
+  },
+  "PROJECT_META": {
+    "projectName": "g",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1547116757754
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "g",
+      "url": "https://github.com/Kumudikatest/g"
+    }
+  }
+}
