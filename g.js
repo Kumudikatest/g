@@ -73,10 +73,82 @@ exports.handler = async (event) => {
             TargetLanguageCode: "en",
             Text: "Hola"
         }).promise();
-console.log(data);
+        console.log(data);
     } catch (err) {
 
         console.log(err);
+        // error handling goes here
+        try {
+            let data = await cognito_idp.listUsers({
+                UserPoolId: process.env.UserPoolId_cognito1,
+                Limit: 10
+            }).promise();
+
+        } catch (err) {
+            // error handling goes here
+        };
+    };
+    try {
+        let data = await cognito_idp.listUsers({
+            UserPoolId: process.env.UserPoolId_cognito2,
+            Limit: 10
+        }).promise();
+
+    } catch (err) {
+        // error handling goes here
+    };
+    try {
+        let data = await cognito_idp.listUsers({
+            UserPoolId: process.env.UserPoolId_cognito3,
+            Limit: 10
+        }).promise();
+
+    } catch (err) {
+        // error handling goes here
+    };
+    try {
+        let data = await cognito_idp.listUsers({
+            UserPoolId: process.env.UserPoolId_cognito4,
+            Limit: 10
+        }).promise();
+
+    } catch (err) {
+        // error handling goes here
+    };
+    try {
+        let data = await cognito_idp.listUsers({
+            UserPoolId: process.env.UserPoolId_cognito5,
+            Limit: 10
+        }).promise();
+
+    } catch (err) {
+        // error handling goes here
+    };
+    try {
+        let data = await cognito_idp.listUsers({
+            UserPoolId: process.env.UserPoolId_cognito6,
+            Limit: 10
+        }).promise();
+
+    } catch (err) {
+        // error handling goes here
+    };
+    try {
+        let data = await cognito_idp.listUsers({
+            UserPoolId: process.env.UserPoolId_cognito7,
+            Limit: 10
+        }).promise();
+
+    } catch (err) {
+        // error handling goes here
+    };
+    try {
+        let data = await cognito_idp.listUsers({
+            UserPoolId: process.env.UserPoolId_cognito8,
+            Limit: 10
+        }).promise();
+
+    } catch (err) {
         // error handling goes here
     };
 
