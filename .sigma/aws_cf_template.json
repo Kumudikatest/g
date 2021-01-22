@@ -241,7 +241,7 @@
         "Principal": "apigateway.amazonaws.com"
       }
     },
-    "apigTestAPIDeployment1611291016136": {
+    "apigTestAPIDeployment1611295056155": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": "0itznun7w3",
@@ -251,6 +251,9 @@
       "DependsOn": [
         "apigTestAPInewchangetestANY"
       ]
+    },
+    "Metadata": {
+      "foo": "thadi value goes here"
     }
   }
 }

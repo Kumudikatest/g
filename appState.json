@@ -28,7 +28,7 @@
             "config": {}
           }
         ],
-        "lastUpdated": 1611290287707,
+        "lastUpdated": 1611292027783,
         "testCases": {
           "a1181c9d-7840-4614-b2d7-0a08da9173bb": {
             "id": "a1181c9d-7840-4614-b2d7-0a08da9173bb",
@@ -410,10 +410,14 @@
       }
     },
     "customTemplate": {
-      "syntax": "JSON",
-      "overrideDefault": false,
-      "dialect": null,
-      "definitions": null
+      "dialect": "CloudFormation",
+      "definitions": {
+        "Resources": {
+          "Metadata": {
+            "foo": "thadi value goes here"
+          }
+        }
+      }
     },
     "envVariables": [
       {
@@ -446,7 +450,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1611291001030
+    "lastSave": 1611295046496
   },
   "VCS_STATE": {
     "provider": "GitHub",
